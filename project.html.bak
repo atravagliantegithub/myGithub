@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
     <style>
 * {
   box-sizing: border-box;
@@ -79,7 +80,7 @@ body {
 
 /* Add a card effect for articles */
 .card {
-  background-color: rgba(127,127,127,0.75);
+  background-color: rgba(225,225,225,0.75);
   padding: 20px;
   margin-top: 20px;
 }
@@ -95,7 +96,7 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: url('https://media.npr.org/assets/img/2018/03/20/gettyimages-478183941-4068f951459c810c85edd030f5e38f9ecb5aa00c.jpg');
   margin-top: 20px;
 }
 
@@ -112,22 +113,65 @@ body {
   .topnav a {
     float: none;
     width: 100%;
-  } 
+  }
 }
-</style> <title>Music</title>
+</style> <title>Project</title>
   </head>
   <body>
     <div class="header" ;="">
-      <h1><span style="color: white;">Music</span></h1>
+      <h1><span style="color: white;">Project</span></h1>
       <p>.</p>
     </div>
-    <div class="topnav"> <a href="index.html">Home</a> <a href="">Project</a>
-      <a href="myinterests.html">Music</a> <a href="#">News</a> <a href="#" style="float:right"></a>
-    </div>
+    <div class="topnav"><strong> <a href="index.html">Home</a> <a href="mytown.html">Project</a>
+        <a href="myinterests.html">Music</a> <a href="">News</a></strong> </div>
     <div class="row">
       <div class="leftcolumn">
         <div class="card">
-          <h2>Music of the day</h2>
+          <p></p>
+          <p></p>
+          <p></p>
+          <div class="row">
+            <div class="left" style="background-color:#005A92;">
+              <h2>Menu</h2>
+              <input id="mySearch" onkeyup="myFunction()" placeholder="Search.."
+
+                title="Type in a category" type="text">
+              <ul id="myMenu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">jQuery</a></li>
+                <li><a href="#">SQL</a></li>
+                <li><a href="#">Bootstrap</a></li>
+                <li><a href="#">Node.js</a></li>
+              </ul>
+            </div>
+            <div class="right" style="background-color:#ddd;">
+              <p></p>
+            </div>
+          </div>
+          <script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script> </div>
+        <div class="card">
+          <p></p>
+          <h2>Idk</h2>
           <h5>Title description, Dec 7, 2017</h5>
           <div class="fakeimg" style="height:200px;">Image</div>
           <p>Some text..</p>
@@ -135,17 +179,12 @@ body {
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             exercitation ullamco.</p>
-        </div>
-        <div class="card">
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.</p>
+          <p></p>
         </div>
       </div>
       <div class="rightcolumn">
         <div class="card">
-          <h2>About Me</h2>
+          <h2>About This</h2>
           <div class="fakeimg" style="height:100px;">Image</div>
           <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
         </div>
@@ -161,14 +200,13 @@ body {
             <p>Image</p>
           </div>
         </div>
-        <div class="card">
-          <h3>Follow Me</h3>
-          <p>Some text..</p>
-        </div>
+        <h3>Follow Me</h3>
+        <p>@_andreatravagliante_</p>
       </div>
     </div>
     <div class="footer">
-      <h2>Footer</h2>
+      <h2><br>
+      </h2>
     </div>
   </body>
 </html>
