@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title> Town </title>
+    <title>Town</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <meta http-equiv="Content-Style-Type" content="text/css">
     <meta name="generator" content="thesitewizard.com's Layout Wizard 3.0.1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="all" href="styles.css">
     <link rel="stylesheet" type="text/css" href="tswnavbar.css">
   </head>
-  <body style="  background-color:#FCAE1E;">
+  <body style="  background-color: orange" ;="">
+    <div id="google_translate_element"></div>
+    <script type="text/javascript"> 
+        function googleTranslateElementInit() { 
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'}, 
+                'google_translate_element'
+            ); 
+        } 
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
     <div id="tswcontainer">
       <div id="tswcontent">
         <div id="tswcontproper">
-          <h1 style="background-color: red;color: white;  border:2px solid #FCAE1E; text-align: center;padding: 10px; "><strong>Town<br>
-            </strong></h1>
-          <p> </p>
-          I live in a town in Italy called Rome <img src="https://i.gifer.com/78zN.gif">
-          <p></p>
+          <h1 style="background-color: red;color: orange;  border:2px solid #FCAE1E; text-align: center;padding: 10px; "><strong>Town</strong></h1>
+          <div style="background-color:red; color:orange;border: 2px solid orange; float: left; width: 25%;
+  padding-left: 20px;"> <strong> </strong> I live in a town in Italy called
+            Rome </div>
         </div>
-      </div>
-      <div id="tswsidecol">
-        <div id="tswsideproper">
-          <div id="tswcssbuttons">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="myinterests.html" title="Interests">My Interests</a></li>
-              <li><a href="mytown.html">My Town</a></li>
-            </ul>
+        <div id="tswsidecol">
+          <div id="tswsideproper">
+            <div id="tswcssbuttons">
+              <ul>
+                <li><strong><span style="color: #a2b9b8;"><a href="index.html">Home</a></span></strong></li>
+                <strong><span style="color: #a2b9b8;"> </span></strong>
+                <li><strong><span style="color: #a2b9b8;"><a href="myinterests.html"
+
+                        title="Interests">My Interests</a></span></strong></li>
+                <strong> </strong>
+                <li><strong><a href="mytown.html" title="Town">My Town</a></strong></li>
+              </ul>
+            </div>
+            <div style="clear: both;"></div>
+            <div id="tswfooter"> </div>
           </div>
-          <div style="clear: both;"></div>
-          <div id="tswfooter"> </div>
         </div>
-      </div>
+        <img src="https://images.unsplash.com/photo-1531572753322-ad063cecc140?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cm9tZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+
+          style="width: 500px; height: 313px; border: 2px solid orange"> </div>
     </div>
-    
   </body>
 </html>
