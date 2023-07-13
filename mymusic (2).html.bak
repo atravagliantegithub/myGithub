@@ -3,6 +3,14 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=windows-1252">
     <style>
+      @keyframes slideInLeft {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
 * {
   box-sizing: border-box;
 }
@@ -38,6 +46,7 @@ body {
 .topnav {
   overflow: hidden;
   background-color:  #005A92;
+  
 }
 
 /* Style the topnav links */
@@ -114,13 +123,13 @@ body {
   .topnav a {
     float: none;
     width: 100%;
-  }
+  } 
 }
-</style> <title>Project</title>
+</style> <title>Music</title>
   </head>
   <body>
     <div class="header" ;="">
-      <h1><span style="color: white;">Project</span></h1>
+      <h1><span style="color: white;">Music</span></h1>
       <p>.</p>
     </div>
     <div class="topnav"><strong> <a href="index.html">Home</a> <a href="myproject.html">Project</a>
@@ -128,58 +137,19 @@ body {
     <div class="row">
       <div class="leftcolumn">
         <div class="card">
-          <p></p>
-          <p></p>
-          <p></p>
-          <div class="row">
-            <div class="left" style="background-color:#005A92;">
-              <h2>Menu</h2>
-              <input id="mySearch" onkeyup="myFunction()" placeholder="Search.."
+          <h2>Graduation</h2>
+          <div style="height:200px;"><img src="https://upload.wikimedia.org/wikipedia/en/7/70/Graduation_%28album%29.jpg"
 
-                title="Type in a category" type="text">
-              <ul id="myMenu">
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="#">PHP</a></li>
-                <li><a href="#">Python</a></li>
-                <li><a href="#">jQuery</a></li>
-                <li><a href="#">SQL</a></li>
-                <li><a href="#">Bootstrap</a></li>
-                <li><a href="#">Node.js</a></li>
-              </ul>
-            </div>
-            <div class="right" style="background-color:#ddd;">
-              <p></p>
-            </div>
-          </div>
-          <script>
-function myFunction() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("mySearch");
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myMenu");
-  li = ul.getElementsByTagName("li");
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-</script> </div>
+              style="width:300px;height:210px;" ;=""> </div>
+          <br>
+          <strong>Kanye West</strong></div>
         <div class="card">
+          <h2>Views</h2>
+          <p><img src="https://upload.wikimedia.org/wikipedia/en/a/af/Drake_-_Views_cover.jpg"
+
+              style="width:300px;height:210px;"></p>
+          <p><strong>Drake</strong></p>
           <p></p>
-          <h2>Idk</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.</p>
           <p></p>
         </div>
       </div>
@@ -190,7 +160,7 @@ function myFunction() {
           <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
         </div>
         <div class="card">
-          <h3>Popular Post</h3>
+          <h3>Popular Songs</h3>
           <div class="fakeimg">
             <p>Image</p>
           </div>

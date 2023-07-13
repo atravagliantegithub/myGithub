@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Title of the document</title>
     <style>
-#container {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  background: yellow;
-}
-#animate {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  background-color: red;
-}
-</style>
+      @keyframes slideInLeft {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      header {
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 2;
+        animation-name: slideInLeft;
+        background: #666;
+        padding: 14px 16px;
+        overflow: hidden;
+  background-color:  #005A92
+      }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, Helvetica, Sans Serif;
+      }
+      a {
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 10px;
+        color: #fff;
+      }
+    </style>
   </head>
   <body>
-    <p><button onclick="myMove()">Click Me</button></p>
-    <div id="container">
-      <div id="animate"></div>
-    </div>
-    <script>
-function myMove() {
-  let id = null;
-  const elem = document.getElementById("animate");   
-  let pos = 0;
-  clearInterval(id);
-  id = setInterval(frame, 5);
-  function frame() {
-    if (pos == 350) {
-      clearInterval(id);
-    } else {
-      pos++; 
-      elem.style.top = pos + "px"; 
-      elem.style.left = pos + "px"; 
-    }
-  }
-}
-</script>
+    <header> <strong><a href="#">Home</a> <a href="#">Project</a> <a href="#">Music</a>
+        <a href="#">News</a></strong> </header>
   </body>
 </html>

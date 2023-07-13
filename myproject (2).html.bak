@@ -1,8 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=windows-1252">
     <style>
+      @keyframes slideInLeft {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
 * {
   box-sizing: border-box;
 }
@@ -17,6 +25,7 @@ body {
 
 /* Header/Blog Title */
 .header {
+  
   padding: 30px;
   text-align: center;
   background: url('https://preview.redd.it/2brjctd95bt71.png?width=1000&format=png&auto=webp&s=d30006ef7eb28329a61e52db915bba1727411aa0');
@@ -38,6 +47,9 @@ body {
 .topnav {
   overflow: hidden;
   background-color:  #005A92;
+  
+  
+
 }
 
 /* Style the topnav links */

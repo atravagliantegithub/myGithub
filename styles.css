@@ -19,7 +19,7 @@ meter, progress, output {
 div#tswsidecol {
 	float: right ;
 	width: 20% ;
-	color: rgb(0, 255, 64) ;
+	color: rgb(0, 0, 0) ;
 	background-color: #fff ;
 }
 div#tswcontent {
