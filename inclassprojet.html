@@ -1,0 +1,359 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+body {
+  font-family: Arial;
+  padding: 10px;
+  /*background: #f1f1f1;*/
+  text-align: center; background-image: url('https://assetsio.reedpopcdn.com/image12_rzXKwkd.png?width=1200&amp;height=1200&amp;fit=bounds&amp;quality=70&amp;format=jpg&amp;auto=webp');"
+  
+}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+      
+.header {
+  padding: 30px;
+  text-align: center;
+  background: url('https://preview.redd.it/2brjctd95bt71.png?width=1000&format=png&auto=webp&s=d30006ef7eb28329a61e52db915bba1727411aa0');
+	
+  background: url('https://media.npr.org/assets/img/2018/03/20/gettyimages-478183941-4068f951459c810c85edd030f5e38f9ecb5aa00c.jpg');
+	/*
+  background: url('https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f9/Multiverse.png/revision/latest?cb=20230418120638');
+	*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:  #005A92;
+  
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+ 
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgba(225,225,225,0.75);
+  padding: 20px;
+  margin-top: 60px;
+  border-radius: 20px;
+  height: 500px;
+  width: 500px;
+  border: 5px solid #990F02;
+	text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+      
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: url('https://media.npr.org/assets/img/2018/03/20/gettyimages-478183941-4068f951459c810c85edd030f5e38f9ecb5aa00c.jpg');
+  margin-top: 20px;
+  border: 2px solid #005A92
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  #cube .front {
+    transform: 
+      translateZ(100px);
+	border-radius: 10px;  
+  }
+  
+  #cube .back {
+    transform: 
+      rotateX(-180deg)
+      translateZ(100px);
+	border-radius: 10px;  
+  }
+  
+  #cube .right {
+    transform:
+      rotateY(90deg)
+      translateZ(100px);
+	border-radius: 10px;  
+  }
+  
+  #cube .left {
+    transform:
+      rotateY(-90deg)
+      translateZ(100px);
+	border-radius: 10px;  
+  }
+  
+  #cube .top {
+    transform:
+      rotateX(90deg)
+      translateZ(100px);
+	border-radius: 10px;  
+  }
+  
+  #cube .bottom {
+    transform:
+      rotateX(-90deg)
+      translateZ(100px);
+	border-radius: 10px;  
+  }
+  
+  .container {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto 40px;
+    
+    
+    perspective: 1000px;
+    perspective-origin: 50% 100%;
+  }
+  
+  #cube {
+    width: 100%;
+    height: 100%;
+    top: 100px;
+    position: absolute;
+    
+    transform-style: preserve-3d;
+    
+    transition: transform 3s;
+  }
+  
+  #cube:hover {
+    cursor: pointer;
+  }
+  
+  #cube div {
+    background: hsla(0, 85%, 50%, 0.8);
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    border: 2px solid #ab1a1a;
+    
+    margin: 0 auto;  
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 500%;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .dot {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 15px;  
+  }
+  
+  .front .dot1 { top: 85px; left: 85px; }
+  .back .dot1 { top: 45px; left: 45px; }
+  .back .dot2 { top: 125px; left: 125px; }
+  .right .dot1 { top: 45px; left: 45px; }
+  .right .dot2 { top: 85px; left: 85px; }
+  .right .dot3 { top: 125px; left: 125px; }
+  .left .dot1 { top: 45px; left: 45px; }
+  .left .dot2 { top: 45px; left: 125px; }
+  .left .dot3 { top: 125px; left: 45px; }
+  .left .dot4 { top: 125px; left: 125px; }
+  .top .dot1 { top: 45px; left: 45px; }
+  .top .dot2 { top: 45px; left: 125px; }
+  .top .dot3 { top: 85px; left: 85px; }
+  .top .dot4 { top: 125px; left: 45px; }
+  .top .dot5 { top: 125px; left: 125px; }
+  .bottom .dot1 { top: 45px; left: 45px; }
+  .bottom .dot2 { top: 45px; left: 85px; }
+  .bottom .dot3 { top: 45px; left: 125px; }
+  .bottom .dot4 { top: 125px; left: 45px; }
+  .bottom .dot5 { top: 125px; left: 85px; }
+  .bottom .dot6 { top: 125px; left: 125px; }
+
+}
+</style> <title>Projects</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1><span style="color: white;">Projects</span></h1>
+      <p>.</p>
+    </div>
+    <div class="topnav"><strong> <a href="index.html">Home</a> <a href="myproject.html">Programming</a>
+        <a href="myweather.html">Weather</a> <a href="inclassprojet.html">Projects</a></strong></div>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2> <strong>Roll the Dice </strong></h2>
+          <section class="container">
+            <div id="cube">
+              <div class="front"> <span class="dot dot1"></span> </div>
+              <div class="back"> <span class="dot dot1"></span> <span class="dot dot2"></span>
+              </div>
+              <div class="right"> <span class="dot dot1"></span> <span class="dot dot2"></span>
+                <span class="dot dot3"></span> </div>
+              <div class="left"> <span class="dot dot1"></span> <span class="dot dot2"></span>
+                <span class="dot dot3"></span> <span class="dot dot4"></span> </div>
+              <div class="top"> <span class="dot dot1"></span> <span class="dot dot2"></span>
+                <span class="dot dot3"></span> <span class="dot dot4"></span> <span
+
+                  class="dot dot5"></span> </div>
+              <div class="bottom"> <span class="dot dot1"></span> <span class="dot dot2"></span>
+                <span class="dot dot3"></span> <span class="dot dot4"></span> <span
+
+                  class="dot dot5"></span> <span class="dot dot6"></span> </div>
+            </div>
+          </section>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="card">
+            <h2> <strong>Roll the Dice </strong></h2>
+            <section class="container">
+              <div id="cube">
+                <div class="front"> <span class="dot dot1"></span> </div>
+                <div class="back"> <span class="dot dot1"></span> <span class="dot dot2"></span>
+                </div>
+                <div class="right"> <span class="dot dot1"></span> <span class="dot dot2"></span>
+                  <span class="dot dot3"></span> </div>
+                <div class="left"> <span class="dot dot1"></span> <span class="dot dot2"></span>
+                  <span class="dot dot3"></span> <span class="dot dot4"></span>
+                </div>
+                <div class="top"> <span class="dot dot1"></span> <span class="dot dot2"></span>
+                  <span class="dot dot3"></span> <span class="dot dot4"></span>
+                  <span class="dot dot5"></span> </div>
+                <div class="bottom"> <span class="dot dot1"></span> <span class="dot dot2"></span>
+                  <span class="dot dot3"></span> <span class="dot dot4"></span>
+                  <span class="dot dot5"></span> <span class="dot dot6"></span>
+                </div>
+              </div>
+            </section>
+            <script>
+    var cube = document.getElementById('cube');
+
+var min = 1;
+var max = 24;
+
+cube.onclick = function() {
+    var xRand = getRandom(max, min);
+    var yRand = getRandom(max, min);
+
+    cube.style.transform = 'rotateX('+xRand+'deg) rotateY('+yRand+'deg)';
+    console.log(getResult(xRand, yRand));
+}
+
+function getRandom(max, min) {
+    return(Math.floor(Math.random()*(max-min))+min) * 90;
+}
+  </script> </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

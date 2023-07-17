@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: Arial;
   padding: 10px;
@@ -14,8 +10,62 @@ body {
   text-align: center; background-image: url('https://assetsio.reedpopcdn.com/image12_rzXKwkd.png?width=1200&amp;height=1200&amp;fit=bounds&amp;quality=70&amp;format=jpg&amp;auto=webp');"
   
 }
+}
 
-/* Header/Blog Title */
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+   margin-top: 20px;
+  border-radius: 20px;
+  width: 50px;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 50%;
+  font-size: 18px;
+  padding: 11px;
+  border-radius: 50px;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+      
 .header {
   padding: 30px;
   text-align: center;
@@ -38,6 +88,7 @@ body {
 .topnav {
   overflow: hidden;
   background-color:  #005A92;
+  
 }
 
 /* Style the topnav links */
@@ -83,13 +134,15 @@ body {
   background-color: rgba(225,225,225,0.75);
   padding: 20px;
   margin-top: 20px;
+ 
 }
 
 /* Clear floats after the columns */
-.row::after {
+.row:after {
   content: "";
   display: table;
   clear: both;
+  margin
 }
 
 /* Footer */
@@ -101,11 +154,13 @@ body {
   border: 2px solid #005A92
 }
 
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
+    
   }
 }
 
@@ -114,46 +169,76 @@ body {
   .topnav a {
     float: none;
     width: 100%;
+    
   }
 }
-</style> <title>Project</title>
+</style> <title>Programming</title>
   </head>
   <body>
-    <div class="header" ;="">
-      <h1><span style="color: white;">Project</span></h1>
+    <div class="header">
+      <h1><span style="color: white;">Programming</span></h1>
       <p>.</p>
     </div>
-    <div class="topnav"><strong> <a href="index.html">Home</a> <a href="myproject.html">Project</a>
-        <a href="mymusic.html">Music</a> <a href="">News</a></strong> </div>
+    <div class="topnav"><strong> <a href="index.html">Home</a> <a href="myproject.html">Programming</a>
+        <a href="myweather.html">Weather</a> <a href="inclassprojet.html">Projects</a></strong>
+    </div>
     <div class="row">
-      <div class="leftcolumn">
-        <div class="card">
-          <p></p>
-          <p></p>
-          <p></p>
-          <div class="row">
-            <div class="left" style="background-color:#005A92;">
-              <h2>Menu</h2>
-              <input id="mySearch" onkeyup="myFunction()" placeholder="Search.."
+      <div class="left" style="background-color:#bbb;">
+        <h2 style="text-align: center;"><br>
+          <img src="https://global.discourse-cdn.com/sitepoint/original/3X/4/3/436c792eb6b4ca3f1557265b5042c1ed5f1e4b45.png"
 
-                title="Type in a category" type="text">
-              <ul id="myMenu">
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="#">PHP</a></li>
-                <li><a href="#">Python</a></li>
-                <li><a href="#">jQuery</a></li>
-                <li><a href="#">SQL</a></li>
-                <li><a href="#">Bootstrap</a></li>
-                <li><a href="#">Node.js</a></li>
-              </ul>
-            </div>
-            <div class="right" style="background-color:#ddd;">
-              <p></p>
-            </div>
-          </div>
-          <script>
+            style="width: 287px; height: 150px;"> </h2>
+        <input id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"
+
+          type="text">
+        <ul id="myMenu">
+          <li><span style="font-family: Bell MT;"><span style="color: #12ae71;"><a
+
+                  href="https://www.w3schools.com/html/default.asp">HTML</a></span></span></li>
+          <span style="font-family: Bell MT;"> <span style="color: #12ae71;"> </span>
+          </span>
+          <li><span style="font-family: Bell MT;"><span style="color: #12ae71;"><a
+
+                  href="https://www.w3schools.com/css/default.asp">CSS</a></span></span></li>
+          <span style="font-family: Bell MT;"> <span style="color: #12ae71;"> </span>
+          </span>
+          <li><span style="font-family: Bell MT;"><span style="color: #12ae71;"><a
+
+                  href="https://www.w3schools.com/js/default.asp">JavaScript</a></span></span></li>
+          <span style="font-family: Bell MT;"> <span style="color: #12ae71;"> </span>
+          </span>
+          <li><span style="font-family: Bell MT;"><span style="color: #12ae71;"><a
+
+                  href="https://www.w3schools.com/php/default.asp">PHP</a></span></span></li>
+          <span style="font-family: Bell MT;"> <span style="color: #12ae71;"> </span>
+          </span>
+          <li><span style="font-family: Bell MT;"><span style="color: #12ae71;"><a
+
+                  href="https://www.w3schools.com/python/default.asp">Python</a></span></span></li>
+          <span style="font-family: Bell MT;"> <span style="color: #12ae71;"> </span>
+          </span>
+          <li><span style="font-family: Bell MT;"><span style="color: #12ae71;"><a
+
+                  href="https://www.w3schools.com/jquery/default.asp">jQuery</a></span></span></li>
+          <span style="font-family: Bell MT;"> <span style="color: #12ae71;"> </span>
+          </span>
+          <li><span style="font-family: Bell MT;"><span style="color: #12ae71;"><a
+
+                  href="https://www.w3schools.com/sql/default.asp">SQL</a></span></span></li>
+          <span style="font-family: Bell MT;"> <span style="color: #12ae71;"> </span>
+          </span>
+          <li><span style="font-family: Bell MT;"><span style="color: #12ae71;"><a
+
+                  href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">Bootstrap</a></span></span></li>
+          <span style="font-family: Bell MT;"> <span style="color: #12ae71;"> </span>
+          </span>
+          <li><span style="font-family: Bell MT;"><span style="color: #12ae71;"><a
+
+                  href="https://www.w3schools.com/nodejs/default.asp">Node.js</a></span></span></li>
+        </ul>
+      </div>
+    </div>
+    <script>
 function myFunction() {
   var input, filter, ul, li, a, i;
   input = document.getElementById("mySearch");
@@ -169,45 +254,10 @@ function myFunction() {
     }
   }
 }
-</script> </div>
-        <div class="card">
-          <p></p>
-          <h2>Idk</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.</p>
-          <p></p>
-        </div>
-      </div>
-      <div class="rightcolumn">
-        <div class="card">
-          <h2>About This</h2>
-          <div class="fakeimg" style="height:100px;">Image</div>
-          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-        </div>
-        <div class="card">
-          <h3>Popular Post</h3>
-          <div class="fakeimg">
-            <p>Image</p>
-          </div>
-          <div class="fakeimg">
-            <p>Image</p>
-          </div>
-          <div class="fakeimg">
-            <p>Image</p>
-          </div>
-        </div>
-        <h3>Follow Me</h3>
-        <p>@_andreatravagliante_</p>
-      </div>
-    </div>
-    <div class="footer">
+</script> <div class="footer">
       <h2><br>
       </h2>
     </div>
+    
   </body>
 </html>

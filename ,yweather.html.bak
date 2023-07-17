@@ -3,7 +3,6 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=windows-1252">
     <style>
-     
 * {
   box-sizing: border-box;
 }
@@ -39,7 +38,6 @@ body {
 .topnav {
   overflow: hidden;
   background-color:  #005A92;
-  
 }
 
 /* Style the topnav links */
@@ -98,8 +96,9 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #005A92;
+  background: url('https://media.npr.org/assets/img/2018/03/20/gettyimages-478183941-4068f951459c810c85edd030f5e38f9ecb5aa00c.jpg');
   margin-top: 20px;
+  border: 2px solid #005A92
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -115,42 +114,46 @@ body {
   .topnav a {
     float: none;
     width: 100%;
-  }
+  } 
 }
-</style> <title>Home</title>
+</style> <title>Music</title>
   </head>
   <body>
-    <div class="header" ;="">
-      <h1><span style="color: white;">Home</span></h1>
+    <div class="header">
+      <h1><span style="color: white;">Music</span></h1>
       <p>.</p>
     </div>
     <div class="topnav"><strong> <a href="index.html">Home</a> <a href="myproject.html">Programming</a>
-        <a href="myweather.html">Weather</a> <a href="inclassprojet.html">Projects</a></strong>
+        <a href="mymusic.html">Music</a> <a href="inclassprojet.html">Projects</a></strong>
     </div>
     <div class="row">
       <div class="leftcolumn">
         <div class="card">
-          <h2>Idk</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.</p>
-        </div>
+          <h2>Graduation</h2>
+          <div style="height:200px;"><img src="https://upload.wikimedia.org/wikipedia/en/7/70/Graduation_%28album%29.jpg"
+
+              style="width:300px;height:210px;" ;=""> </div>
+          <br>
+          <strong>Kanye West</strong></div>
         <div class="card">
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.</p>
+          <h2>Views</h2>
+          <p><img src="https://upload.wikimedia.org/wikipedia/en/a/af/Drake_-_Views_cover.jpg"
+
+              style="width:300px;height:210px;"></p>
+          <p><strong>Drake</strong></p>
+          <p></p>
+          <p></p>
         </div>
       </div>
       <div class="rightcolumn">
         <div class="card">
           <h2>About This</h2>
-          <div class="fakeimg" style="height:100px;">Image</div>
-          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+          <p>Some text about me in culpa qui officia deserunt mollit anim</p>
+          <p><br>
+          </p>
+          <p><br>
+          </p>
+          <p>..</p>
         </div>
         <div class="card">
           <h3>Popular Songs</h3>
@@ -164,9 +167,8 @@ body {
             <p>Image</p>
           </div>
         </div>
-        <div class="card">
-          <h3>Follow Me</h3>
-          @_andreatravagliante_ </div>
+        <h3>Follow Me</h3>
+        <p>@_andreatravagliante_</p>
       </div>
     </div>
     <div class="footer">

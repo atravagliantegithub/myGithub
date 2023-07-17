@@ -124,8 +124,9 @@ body {
       <h1><span style="color: white;">Home</span></h1>
       <p>.</p>
     </div>
-    <div class="topnav"><strong> <a href="index.html">Home</a> <a href="myproject.html">Project</a>
-        <a href="mymusic.html">Music</a> <a href="">News</a></strong> </div>
+    <div class="topnav"><strong> <a href="index.html">Home</a> <a href="myproject.html">Programming</a>
+        <a href="myweather.html">Weather</a> <a href="inclassprojet.html">Projects</a></strong>
+    </div>
     <div class="row">
       <div class="leftcolumn">
         <div class="card">
@@ -165,8 +166,7 @@ body {
         </div>
         <div class="card">
           <h3>Follow Me</h3>
-          <p>@_andreatravagliante_</p>
-        </div>
+          @_andreatravagliante_ </div>
       </div>
     </div>
     <div class="footer">

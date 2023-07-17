@@ -1,15 +1,9 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
 body {
-  font-family: Arial;
-  padding: 10px;
-  /*background: #f1f1f1;*/
-  text-align: center; background-image: url('https://assetsio.reedpopcdn.com/image12_rzXKwkd.png?width=1200&amp;height=1200&amp;fit=bounds&amp;quality=70&amp;format=jpg&amp;auto=webp');"
-  
-}
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -25,9 +19,6 @@ body {
 .left {
   flex: 35%;
   padding: 15px 0;
-   margin-top: 20px;
-  border-radius: 20px;
-  width: 50px;
 }
 
 .left h2 {
@@ -42,10 +33,10 @@ body {
 
 /* Style the search box */
 #mySearch {
-  width: 50%;
+  width: 100%;
   font-size: 18px;
   padding: 11px;
-  border-radius: 50px;
+  border: 1px solid #ddd;
 }
 
 /* Style the navigation menu inside the left column */
@@ -66,7 +57,7 @@ body {
   background-color: #eee;
 }
       
-.header {
+      .header {
   padding: 30px;
   text-align: center;
   background: url('https://preview.redd.it/2brjctd95bt71.png?width=1000&format=png&auto=webp&s=d30006ef7eb28329a61e52db915bba1727411aa0');
@@ -134,33 +125,28 @@ body {
   background-color: rgba(225,225,225,0.75);
   padding: 20px;
   margin-top: 20px;
- 
 }
 
 /* Clear floats after the columns */
-.row:after {
+.row::after {
   content: "";
   display: table;
   clear: both;
-  margin
 }
 
 /* Footer */
 .footer {
   padding: 20px;
   text-align: center;
-  background: url('https://media.npr.org/assets/img/2018/03/20/gettyimages-478183941-4068f951459c810c85edd030f5e38f9ecb5aa00c.jpg');
+  background: #005A92;
   margin-top: 20px;
-  border: 2px solid #005A92
 }
-
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
-    
   }
 }
 
@@ -169,72 +155,33 @@ body {
   .topnav a {
     float: none;
     width: 100%;
-    
   }
 }
-</style> <title>Programming</title>
+</style> <title>Projects</title>
   </head>
   <body>
     <div class="header">
-      <h1><span style="color: white;">Programming</span></h1>
+      <h1><span style="color: white;">Projects</span></h1>
       <p>.</p>
     </div>
     <div class="topnav"><strong> <a href="index.html">Home</a> <a href="myproject.html">Programming</a>
-        <a href="myweather.html">Weather</a> <a href="inclassprojet.html">Projects</a></strong>
-    </div>
+        <a href="mymusic.html">Music</a> <a href="">Projects</a></strong> </div>
     <div class="row">
       <div class="left" style="background-color:#bbb;">
-        <h2 style="text-align: center;"><br>
-          <img src="https://global.discourse-cdn.com/sitepoint/original/3X/4/3/436c792eb6b4ca3f1557265b5042c1ed5f1e4b45.png"
-
-            style="width: 287px; height: 150px;"> </h2>
+        <h2>Menu</h2>
         <input id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"
 
           type="text">
         <ul id="myMenu">
-          <li><span style="font-family: Bell MT;"><span style="color: #12ae71;"><a
-
-                  href="https://www.w3schools.com/html/default.asp">HTML</a></span></span></li>
-          <span style="font-family: Bell MT;"> <span style="color: #12ae71;"> </span>
-          </span>
-          <li><span style="font-family: Bell MT;"><span style="color: #12ae71;"><a
-
-                  href="https://www.w3schools.com/css/default.asp">CSS</a></span></span></li>
-          <span style="font-family: Bell MT;"> <span style="color: #12ae71;"> </span>
-          </span>
-          <li><span style="font-family: Bell MT;"><span style="color: #12ae71;"><a
-
-                  href="https://www.w3schools.com/js/default.asp">JavaScript</a></span></span></li>
-          <span style="font-family: Bell MT;"> <span style="color: #12ae71;"> </span>
-          </span>
-          <li><span style="font-family: Bell MT;"><span style="color: #12ae71;"><a
-
-                  href="https://www.w3schools.com/php/default.asp">PHP</a></span></span></li>
-          <span style="font-family: Bell MT;"> <span style="color: #12ae71;"> </span>
-          </span>
-          <li><span style="font-family: Bell MT;"><span style="color: #12ae71;"><a
-
-                  href="https://www.w3schools.com/python/default.asp">Python</a></span></span></li>
-          <span style="font-family: Bell MT;"> <span style="color: #12ae71;"> </span>
-          </span>
-          <li><span style="font-family: Bell MT;"><span style="color: #12ae71;"><a
-
-                  href="https://www.w3schools.com/jquery/default.asp">jQuery</a></span></span></li>
-          <span style="font-family: Bell MT;"> <span style="color: #12ae71;"> </span>
-          </span>
-          <li><span style="font-family: Bell MT;"><span style="color: #12ae71;"><a
-
-                  href="https://www.w3schools.com/sql/default.asp">SQL</a></span></span></li>
-          <span style="font-family: Bell MT;"> <span style="color: #12ae71;"> </span>
-          </span>
-          <li><span style="font-family: Bell MT;"><span style="color: #12ae71;"><a
-
-                  href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">Bootstrap</a></span></span></li>
-          <span style="font-family: Bell MT;"> <span style="color: #12ae71;"> </span>
-          </span>
-          <li><span style="font-family: Bell MT;"><span style="color: #12ae71;"><a
-
-                  href="https://www.w3schools.com/nodejs/default.asp">Node.js</a></span></span></li>
+          <li><a href="https://www.w3schools.com/html/default.asp">HTML</a></li>
+          <li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+          <li><a href="https://www.w3schools.com/js/default.asp">JavaScript</a></li>
+          <li><a href="https://www.w3schools.com/php/default.asp">PHP</a></li>
+          <li><a href="https://www.w3schools.com/python/default.asp">Python</a></li>
+          <li><a href="https://www.w3schools.com/jquery/default.asp">jQuery</a></li>
+          <li><a href="https://www.w3schools.com/sql/default.asp">SQL</a></li>
+          <li><a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">Bootstrap</a></li>
+          <li><a href="https://www.w3schools.com/nodejs/default.asp">Node.js</a></li>
         </ul>
       </div>
     </div>
@@ -254,10 +201,6 @@ function myFunction() {
     }
   }
 }
-</script> <div class="footer">
-      <h2><br>
-      </h2>
-    </div>
-    
+</script>
   </body>
 </html>
