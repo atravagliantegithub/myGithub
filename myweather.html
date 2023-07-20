@@ -29,8 +29,9 @@ body {
 }
 .wrapper{
   width: 400px;
+  
   background: #fff;
-  border-radius: 7px;
+  border-radius: 30px;
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
 }
 .wrapper header{
@@ -42,15 +43,7 @@ body {
   align-items: center;
   border-bottom: 1px solid #ccc;
 }
-header i{
-  font-size: 0em;
-  cursor: pointer;
-  margin-right: 8px;
-}
-.wrapper.active header i{
-  margin-left: 50px;
-  font-size: 30px;
-}
+
 .wrapper .input-part{
   margin: 30px 30px 30px;
 }
@@ -219,6 +212,9 @@ header i{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  height: 220px;
+ 
+  margin-top: 10px;
 }
 
 .header h1 {
@@ -271,7 +267,8 @@ header i{
 
 /* Add a card effect for articles */
 .card {
-  background-color: rgba(225,225,225,0.75);
+  background: url('https://media4.giphy.com/media/uiovpYpi3npPS68Y1b/200w.gif?cid=82a1493bijzkve5c9lb1jkrn5j5otazdb4vba5fnxcchczu9&ep=v1_gifs_related&rid=200w.gif&ct=g'); 
+  border: 2px solid aqua;
   padding: 20px;
   margin-top: 20px;
 }
@@ -288,7 +285,7 @@ header i{
   padding: 20px;
   text-align: center;
   background: url('https://media.npr.org/assets/img/2018/03/20/gettyimages-478183941-4068f951459c810c85edd030f5e38f9ecb5aa00c.jpg');
-  margin-top: 20px;
+  margin-top: 100px;
   border: 2px solid #005A92
 }
 
@@ -311,49 +308,53 @@ header i{
   </head>
   <body>
     <div class="header">
+      <h1><br>
+        <span style="color: white;"></span></h1>
       <h1><span style="color: white;">Weather <br>
         </span></h1>
       <p>.</p>
     </div>
-    <div class="topnav"><strong> <a href="index.html">Home</a> <a href="myproject.html">Programming</a>
-        <a href="myweather.html">Weather</a> <a href="inclassprojet.html">Projects</a></strong>
-    </div>
-    <center style="margin-top: 30px;">
-    <div class="wrapper">
-      <header><i class="bx bx-left-arrow-alt"></i>Weather App</header>
-      <section class="input-part">
-        <p class="info-txt"></p>
-        <div class="content"> <input spellcheck="false" placeholder="Enter city name"
+    <div class="topnav"><strong> <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="myproject.html">Programming</a> <a href="myweather.html">Weather</a>
+        <a href="inclassprojet.html">Animations</a></strong> </div>
+    <div class="row">
+      <div class="card">
+        <center style="margin-top: 30px;">
+          <div class="wrapper">
+            <header><i class="bx bx-left-arrow-alt"></i>Weather App</header>
+            <section class="input-part">
+              <p class="info-txt"></p>
+              <div class="content"> <input spellcheck="false" placeholder="Enter city name"
 
-            required="" type="text">
-          <div class="separator"></div>
-          <button style="border-radius: 40px;border: blue;">Get Device Location</button>
-        </div>
-      </section>
-      <section class="weather-part"> <img src="" alt="Weather Icon">
-        <div class="temp"> <span class="numb">_</span> <span class="deg">°</span>C
-        </div>
-        <div class="weather">_ _</div>
-        <div class="location"> <i class="bx bx-map"></i> <span>_, _</span> </div>
-        <div class="bottom-details">
-          <div class="column feels"> <i class="bx bxs-thermometer"></i>
-            <div class="details">
-              <div class="temp"> <span class="numb-2">_</span> <span class="deg">°</span>C
+                  required="" type="text">
+                <div class="separator"></div>
+                <button style="border-radius: 40px;border: blue;">Get Device
+                  Location</button> </div>
+            </section>
+            <section class="weather-part"> <img src="" alt="Weather Icon">
+              <div class="temp"> <span class="numb">_</span> <span class="deg">°</span>C
               </div>
-              <p>Feels like</p>
-            </div>
+              <div class="weather">_ _</div>
+              <div class="location"> <i class="bx bx-map"></i> <span>_, _</span>
+              </div>
+              <div class="bottom-details">
+                <div class="column feels"> <i class="bx bxs-thermometer"></i>
+                  <div class="details">
+                    <div class="temp"> <span class="numb-2">_</span> <span class="deg">°</span>C
+                    </div>
+                    <p>Feels like</p>
+                  </div>
+                </div>
+                <div class="column humidity"> <i class="bx bxs-droplet-half"></i>
+                  <div class="details"> <span>_</span>
+                    <p>Humidity</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxZ3sKNvVZ0SZWa7N7YupHjiOPohkAGBsht0Fn9fbjAwuu262e2UlU-Z2AxH8mXeGxk9E&amp;usqp=CAU">
           </div>
-          <div class="column humidity"> <i class="bx bxs-droplet-half"></i>
-            <div class="details"> <span>_</span>
-              <p>Humidity</p>
-              
-            </div>
-          </div>
-        </div>
-        
-      </section>
-    </div>
-    <script>
+          <script>
       const wrapper = document.querySelector(".wrapper"),
 inputPart = document.querySelector(".input-part"),
 infoTxt = inputPart.querySelector(".info-txt"),
@@ -415,7 +416,7 @@ function weatherDetails(info){
         const {temp, feels_like, humidity} = info.main;
 
         if(id == 800){
-            wIcon.src = "icons/clear.svg";
+            wIcon.src = "https://www.svgrepo.com/download/18743/sun.svg";
         }else if(id >= 200 && id <= 232){
             wIcon.src = "icons/storm.svg";  
         }else if(id >= 600 && id <= 622){
@@ -423,9 +424,9 @@ function weatherDetails(info){
         }else if(id >= 701 && id <= 781){
             wIcon.src = "icons/haze.svg";
         }else if(id >= 801 && id <= 804){
-            wIcon.src = "icons/cloud.svg";
+            wIcon.src = "https://svgsilh.com/svg/296440.svg";
         }else if((id >= 500 && id <= 531) || (id >= 300 && id <= 321)){
-            wIcon.src = "icons/rain.svg";
+            wIcon.src = "https://i.etsystatic.com/10919371/r/il/0852b4/1529280472/il_fullxfull.1529280472_mvxw.jpg";
         }
         
         weatherPart.querySelector(".temp .numb").innerText = Math.floor(temp);
@@ -443,7 +444,10 @@ function weatherDetails(info){
 arrowBack.addEventListener("click", ()=>{
     wrapper.classList.remove("active");
 });
-    </script>
+    </script> </center>
+        <br>
+      </div>
+    </div>
     <div class="footer">
       <h2><br>
       </h2>

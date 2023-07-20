@@ -98,8 +98,9 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #005A92;
-  margin-top: 20px;
+  background: url('https://media.npr.org/assets/img/2018/03/20/gettyimages-478183941-4068f951459c810c85edd030f5e38f9ecb5aa00c.jpg');
+  margin-top: 100px;
+  border: 2px solid #005A92
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -125,43 +126,31 @@ body {
       <p>.</p>
     </div>
     <div class="topnav"><strong> <a href="index.html">Home</a> <a href="myproject.html">Programming</a>
-        <a href="myweather.html">Weather</a> <a href="inclassprojet.html">Projects</a></strong>
+        <a href="myweather.html">Weather</a> <a href="inclassprojet.html">Animations</a></strong>
     </div>
     <div class="row">
       <div class="leftcolumn">
-        <div class="card">
-          <h2>Idk</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.</p>
-        </div>
-        <div class="card">
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.</p>
+        <div class="card"><br>
+          <img style="border: 2px solid black; margin-top: 50px;" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJ5NHdiaDR2YjU5NzR0MHU2Z3ViNXM4ejV0ejh2MWp1dXEydTF1MyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/UPwElWTjo7Bf8SJNFm/giphy.gif">
+          <div style="height:200px;"><br>
+          </div>
+          <br>
         </div>
       </div>
       <div class="rightcolumn">
         <div class="card">
           <h2>About This</h2>
-          <div class="fakeimg" style="height:100px;">Image</div>
-          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-        </div>
+          <br>
+          In this class, we had the opportunity to work on several projects
+          and incorporate them in our website</div>
         <div class="card">
-          <h3>Popular Songs</h3>
+          <h3>Main Projects</h3>
+          <div class="fakeimg">Dice</div>
           <div class="fakeimg">
-            <p>Image</p>
+            <p>Weasther App</p>
           </div>
           <div class="fakeimg">
-            <p>Image</p>
-          </div>
-          <div class="fakeimg">
-            <p>Image</p>
+            <p>Pong</p>
           </div>
         </div>
         <div class="card">
@@ -173,6 +162,5 @@ body {
       <h2><br>
       </h2>
     </div>
-    
   </body>
 </html>

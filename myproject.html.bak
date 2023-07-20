@@ -28,6 +28,7 @@ body {
    margin-top: 20px;
   border-radius: 20px;
   width: 50px;
+
 }
 
 .left h2 {
@@ -131,7 +132,7 @@ body {
 
 /* Add a card effect for articles */
 .card {
-  background-color: rgba(225,225,225,0.75);
+  background-color:  #928E85;
   padding: 20px;
   margin-top: 20px;
  
@@ -180,10 +181,10 @@ body {
       <p>.</p>
     </div>
     <div class="topnav"><strong> <a href="index.html">Home</a> <a href="myproject.html">Programming</a>
-        <a href="myweather.html">Weather</a> <a href="inclassprojet.html">Projects</a></strong>
+        <a href="myweather.html">Weather</a> <a href="inclassprojet.html">Animations</a></strong>
     </div>
     <div class="row">
-      <div class="left" style="background-color:#bbb;">
+      <div class="left" style="background-color:white;">
         <h2 style="text-align: center;"><br>
           <img src="https://global.discourse-cdn.com/sitepoint/original/3X/4/3/436c792eb6b4ca3f1557265b5042c1ed5f1e4b45.png"
 
@@ -258,6 +259,5 @@ function myFunction() {
       <h2><br>
       </h2>
     </div>
-    
   </body>
 </html>

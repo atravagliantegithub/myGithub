@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
 body {
@@ -130,14 +131,13 @@ body {
 .card {
   background-color: rgba(225,225,225,0.75);
   padding: 20px;
-  margin-top: 60px;
   border-radius: 20px;
   height: 500px;
   width: 500px;
   border: 5px solid #990F02;
 	text-align: center;
   display: block;
-  margin: 0 auto;
+  margin: 50 auto;
 }
 
 /* Clear floats after the columns */
@@ -154,8 +154,75 @@ body {
   padding: 20px;
   text-align: center;
   background: url('https://media.npr.org/assets/img/2018/03/20/gettyimages-478183941-4068f951459c810c85edd030f5e38f9ecb5aa00c.jpg');
-  margin-top: 20px;
+  margin-top: 100px;
   border: 2px solid #005A92
+}
+      
+      h1 {
+font-family: 'Courier New', Courier, monospace;
+font-size: 60px;
+}
+.m{
+  width:330px;
+  height:330px;
+  margin-top: 1100px;
+  margin-left: 770px;
+  border:5px solid white;
+  position:absolute;
+  top:0; bottom:0; left:0;right:0;
+ 
+  border-radius:50%; 
+}
+
+.circle{
+  width:30px;
+  height:30px;
+  background:cyan;
+  border-radius:50%;
+  position:absolute;
+  top:0; bottom:0; left:0;right:0;
+  overflow:hidden;
+  margin:auto;
+  animation: circle 6s linear infinite;
+}
+      
+.nucleus{
+  width:50px;
+  height:50px;
+  background:red;
+  border-radius:50%;
+  position:absolute;
+  top:0; bottom:0; left:0;right:0;
+  overflow:hidden;
+  margin-top: 1390px;
+  margin-left: 915px;
+}
+
+@keyframes circle{
+  0%{
+    transform:rotate(0deg)
+              translate(-165px)
+              rotate(0deg);
+  
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-165px)
+              rotate(-360deg);
+  }
+}
+#scoreboard {
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#reset {
+    cursor: pointer;
+    border-radius: 15px;
+    width: 100px;
+    height: 50px;
+    font-family: 'Courier New', Courier, monospace;
 }
 h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -204,6 +271,7 @@ h1 {
   }
   
   .container {
+    margin-top: 40px;
     width: 200px;
     height: 300px;
     position: relative;
@@ -277,15 +345,108 @@ h1 {
   .bottom .dot6 { top: 125px; left: 125px; }
 
 }
-</style> <title>Projects</title>
+
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+      
+
+.pacman {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #F2D648;
+  position: relative;
+  margin-top: 20px;
+}
+
+.pacman__eye {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 20px;
+  right: 40px;
+  background: #333333;
+}
+
+.pacman__mouth {
+  background: #000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+  animation-name: eat;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+}
+
+.pacman__food {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  top: 40%;
+  left: 120px;
+  animation-name: food;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes eat {
+  0% {
+    clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+  }
+  25% {
+    clip-path: polygon(100% 60%, 44% 48%, 100% 40%);
+  }
+  50% {
+    clip-path: polygon(100% 50%, 44% 48%, 100% 50%);
+  }
+  75% {
+   clip-path: polygon(100% 59%, 44% 48%, 100% 35%);
+  }
+  100% {
+   clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+  }
+}
+
+@keyframes food {
+  0% {
+    transform: translateX(0);
+     opacity: 1;
+  }
+  100% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+   
+  
+</style> <title>Animations</title>
   </head>
   <body>
     <div class="header">
-      <h1><span style="color: white;">Projects</span></h1>
+      <h1><span style="color: white;">Animations</span></h1>
       <p>.</p>
     </div>
     <div class="topnav"><strong> <a href="index.html">Home</a> <a href="myproject.html">Programming</a>
-        <a href="myweather.html">Weather</a> <a href="inclassprojet.html">Projects</a></strong></div>
+        <a href="myweather.html">Weather</a> <a href="inclassprojet.html">Animations</a></strong></div>
+    <section style=" height: 140; background: black;border: 2px solid yellow; margin-top: 20px;">
+      <div class="pacman" style="margin-left: 450px;">
+        <div class="pacman__eye"></div>
+        <div class="pacman__mouth"></div>
+        <div class="pacman__food">
+          <div class="pacman__food"> </div>
+        </div>
+      </div>
+    </section>
+    <section> </section>
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8d36cd16-220a-4dec-853a-9c1448b478e5/dci7gh0-5ed7be37-97b9-41b1-9aa5-eb3a9d4b7583.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhkMzZjZDE2LTIyMGEtNGRlYy04NTNhLTljMTQ0OGI0NzhlNVwvZGNpN2doMC01ZWQ3YmUzNy05N2I5LTQxYjEtOWFhNS1lYjNhOWQ0Yjc1ODMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pr6M-X_vfe2J-J2TAFu782CHWv208PJI-NY31_l-Nhk"
+
+      style="width: 390px; height: 130px; margin-top: -140px; margin-left: 100px;">
     <div class="row">
       <div class="leftcolumn">
         <div class="card">
@@ -309,32 +470,22 @@ h1 {
                   class="dot dot5"></span> <span class="dot dot6"></span> </div>
             </div>
           </section>
-          <br>
-          <br>
-          <br>
-          <br>
-          <div class="card">
-            <h2> <strong>Roll the Dice </strong></h2>
-            <section class="container">
-              <div id="cube">
-                <div class="front"> <span class="dot dot1"></span> </div>
-                <div class="back"> <span class="dot dot1"></span> <span class="dot dot2"></span>
-                </div>
-                <div class="right"> <span class="dot dot1"></span> <span class="dot dot2"></span>
-                  <span class="dot dot3"></span> </div>
-                <div class="left"> <span class="dot dot1"></span> <span class="dot dot2"></span>
-                  <span class="dot dot3"></span> <span class="dot dot4"></span>
-                </div>
-                <div class="top"> <span class="dot dot1"></span> <span class="dot dot2"></span>
-                  <span class="dot dot3"></span> <span class="dot dot4"></span>
-                  <span class="dot dot5"></span> </div>
-                <div class="bottom"> <span class="dot dot1"></span> <span class="dot dot2"></span>
-                  <span class="dot dot3"></span> <span class="dot dot4"></span>
-                  <span class="dot dot5"></span> <span class="dot dot6"></span>
+        </div>
+        <section>
+          <div class="nucleus"></div>
+          <div class="row">
+            <div class="leftcolumn">
+              <div class="card" style="background: black; border: 5px solid #82EEFD">
+                <div class="m" style="margin-top: 1250px;">
+                  <h2 style="color: white; margin-top:-50px;"> <strong> Atom </strong>
+                  </h2>
+                  <div class="circle"> </div>
                 </div>
               </div>
-            </section>
-            <script>
+            </div>
+          </div>
+        </section>
+        <script>
     var cube = document.getElementById('cube');
 
 var min = 1;
@@ -352,8 +503,11 @@ function getRandom(max, min) {
     return(Math.floor(Math.random()*(max-min))+min) * 90;
 }
   </script> </div>
-        </div>
-      </div>
     </div>
+    <div class="footer">
+      <h2><br>
+      </h2>
+    </div>
+    
   </body>
 </html>
